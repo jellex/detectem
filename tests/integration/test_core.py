@@ -196,7 +196,7 @@ class TestDetector():
             },
             {
                 'request': {'url': 'http://foo.org/lib/foo-min-1.1.js'},
-                'response': {'url': 'http://foo.org/lib/foo-min-1.1.js',},
+                'response': {'url': 'http://foo.org/lib/foo-min-1.1.js', },
             },
         ]
         p = self._create_plugin(self.FOO_PLUGIN, sources, ['url'])

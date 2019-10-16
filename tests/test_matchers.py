@@ -17,7 +17,7 @@ from tests import create_pm
 
 def res_text(text):
     return {
-        'response': {'content': {'text': text,},},
+        'response': {'content': {'text': text, }, },
     }
 
 
@@ -33,7 +33,7 @@ def res_server_header(value):
         'response': {'headers': [{
             'name': 'Server',
             'value': value,
-        }],},
+        }], },
     }
 
 
@@ -105,7 +105,7 @@ class TestMatchers:
             (XPathMatcher, res_text('<a>foo</a>'), ('//a/text()', presence_re), True),
             (XPathMatcher, res_text('<a>bar</a>'), ('//a/text()', presence_re), False),
         ]
-    ) # yapf: disable
+    )  # yapf: disable
     def test_get_presence(self, matcher_class, entry, matcher, presence):
         assert matcher_class.get_info(entry, matcher) == create_pm(presence=presence)
 

@@ -35,8 +35,8 @@ class TestCommonMatches:
                 # Each yaml_dict is an entry in matches
                 for yaml_dict in entry['matches']:
                     # Filter valid matchers if dom matchers are expected
-                    if  (only_dom_matches and 'dom' not in yaml_dict) or \
-                        (not only_dom_matches and 'dom' in yaml_dict):
+                    if (only_dom_matches and 'dom' not in yaml_dict) or \
+                      (not only_dom_matches and 'dom' in yaml_dict):
                         continue
 
                     if plugin:

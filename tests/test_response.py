@@ -33,6 +33,7 @@ def test_is_valid_mimetype(response, result):
 def test_get_charset(response, result):
     assert get_charset(response) == result
 
+
 def test_create_lua_script():
     class BlaPlugin(Plugin):
         name = 'bla'
