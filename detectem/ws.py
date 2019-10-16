@@ -13,7 +13,6 @@ except ImportError:
     sys.exit(0)
 
 
-
 @post('/detect')
 def do_detection():
     # Url is mandatory

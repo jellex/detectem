@@ -10,6 +10,7 @@ class JoomlaPlugin(Plugin):
     matchers = [
         {
             'body':
-                '<meta name="generator" content="Joomla! - Open Source Content Management"'
+                '<meta name="generator" content="Joomla! - '
+                'Open Source Content Management"'
         },
     ]

@@ -2,6 +2,7 @@ import pytest
 
 from detectem.utils import get_url
 
+
 @pytest.mark.parametrize('entry,result', [
     ({'request': {'url': 'http://a'}}, 'http://a'),
     ({
